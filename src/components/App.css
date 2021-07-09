@@ -1,0 +1,7 @@
+
+@import url('./Globals.css');
+
+.App {
+  background-color: var(--app-background-color);
+  border: solid 10px green;
+}

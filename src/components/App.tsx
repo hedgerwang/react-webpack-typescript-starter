@@ -1,16 +1,25 @@
 import * as React from "react";
-import { hot } from "react-hot-loader";
 
-const reactLogo = require("./../assets/img/react_logo.svg");
+import image from './../assets/img/react_logo.svg';
 import "./../assets/scss/App.scss";
+import styles from "./App.css";
+
+console.log(styles.App);
 
 class App extends React.Component<Record<string, unknown>, undefined> {
   public render() {
     return (
-      <div className="app">
-        <h1>Hello Wxorld!xcxccxcxzcxzc</h1>
-        <p>Foo to the barz1</p>
-        <img src={reactLogo.default} height="480" />
+      <div className={styles.App}>
+        <h1>Hello World!</h1>
+        <p>Foo to 21231231xcxzcxxcxzcxzc333z
+          1
+          2
+          3
+          4xcxzczxc
+          5
+          1</p>
+
+        <img src={image} height="480" />
       </div>
     );
   }
@@ -18,4 +27,4 @@ class App extends React.Component<Record<string, unknown>, undefined> {
 
 declare let module: Record<string, unknown>;
 
-export default hot(module)(App);
+export default App;
